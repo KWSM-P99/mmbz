@@ -1,3 +1,6 @@
+TLDR: paste EQ Logs dir into path.txt, run MMBZ-Server.exe, open browser to localhost:8080
+
+
 **SETUP**
 
 1. Enter your EQ installation Logs directory into path.txt file in this folder.
@@ -20,11 +23,11 @@
 
 1. To start a bidding session, type in /say mmbz START
 2. To end the bidding session, type in /say mmbz STOP
-3. To turn MMBZ logging on or off, click Fetch ON/OFF (your eq log is unaffected)
+3. To bid as an officer:
+	3a. Start a session (/say mmbz START)
+	3b. Before you begin taking bids, enter your DKP and ITEM. Submit Bid
+4. To see these results in mmbz, you must click Start Fetch. This can be done before, during, or after the bidding has occurred. Click again if you wish to end the active log parsing. 
 
-It is _not necessary_ to have MMBZ Tracker running during a bidding session. The session can be retrieved in full afterwards by clicking the Fetch ON/OFF button so long as you do not start a new session.
-
-If you wish to see the results in more real time (it's kinda cool...) just leave it ON and new bids will be retrieved every 5 seconds.
 
 **FUTURE FEATURES**
 
@@ -38,7 +41,7 @@ User will be able to select how many seconds occur before a fetch (for those of 
 
 **KNOWN ISSUES**
 
-Parsing for tells with 2 or more numbers incomplete at this time.
+Parsing for tells with 2 or more numbers incomplete at this time. It will show the first number as the bid.
 Timestamps are ISO which is India, I think.
 
 ---
