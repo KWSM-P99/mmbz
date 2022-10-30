@@ -1,0 +1,34 @@
+:root {
+  --background: #1f2430;
+  --cards-light-blue: #4d709b;
+  --cards-text: #253f5f;
+  --cards-blue: #344c70;
+  --buttons: #ffffff;
+  --unequipped: #ff0000;
+  --blue-light: #94e5f4;
+  --text: #ffffff;
+  --yellow: #ebc700;
+  --orange: #c0970f;
+
+  --poor: #9d9d9d;
+  --common: #ffffff;
+  --uncommon: #1eff00;
+  --rare: #0070dd;
+  --epic: #a335ee;
+  --legendary: #ff8000;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

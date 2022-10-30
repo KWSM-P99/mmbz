@@ -1,0 +1,430 @@
+:root {
+  --background: #1f2430;
+  --cards-light-blue: #4d709b;
+  --cards-light-green: #01b067;
+  --cards-text: #253f5f;
+  --cards-blue: #344c70;
+  --buttons: #ffffff;
+  --unequipped: #ff0000;
+  --blue-light: #94e5f4;
+  --text: #ffffff;
+  --yellow: #ebc700;
+  --orange: #c99d0c;
+  --red: #802222;
+  --poor: #9d9d9d;
+  --common: #ffffff;
+  --uncommon: #1eff00;
+  --rare: #0070dd;
+  --epic: #a335ee;
+  --legendary: #ff8000;
+  --padding: 16px;
+}
+
+.App {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+  display: "flex";
+  flex-direction: "column";
+  width: 1000px;
+  max-width: 80vw;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.columnMobileReverse {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerImage {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  object-fit: cover;
+  margin: 0px;
+}
+
+.cardHeader,
+.cardBody {
+  width: 100%;
+  height: min-content;
+  color: white;
+  margin: 0px;
+}
+
+.cardHeader {
+  background-color: #4d709b;
+  font-weight: bold;
+}
+
+.cardBody {
+  background-color: darkslategray;
+}
+
+.greenBg,
+.redBg {
+  width: 50px;
+}
+
+.redBg {
+  background-color: var(--red);
+}
+
+.blackPurple {
+  color: #a335ee;
+  background-color: #101114;
+  font-weight: bold;
+}
+
+.greyWhite {
+  color: white;
+  background-color: var(--cards-blue);
+}
+
+.buttonLeft {
+  padding: var(--padding);
+  color: white;
+  border: none;
+  outline: none;
+  width: 150px;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
+.font15 {
+  font-size: 15px;
+}
+
+.module {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly;
+}
+
+.alignItems {
+  align-items: center;
+}
+
+.lightBlue {
+  background-color: var(--cards-light-blue);
+}
+
+.lightGreen {
+  background-color: var(--cards-light-green);
+}
+
+.gold {
+  background-color: var(--orange);
+}
+
+.orange {
+  background-color: var(--legendary);
+}
+
+.red {
+  background-color: var(--unequipped);
+}
+
+.white {
+  color: white;
+}
+
+.grey {
+  background-color: #9d9d9d;
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.radiusTop {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.radiusBottom {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.radiusRight {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.radiusLeft {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.radiusAll {
+  border-radius: 3px;
+}
+
+.warning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  color: white;
+  font-weight: bold;
+  background-color: var(--unequipped);
+}
+
+.pointerHover {
+  cursor: pointer;
+}
+
+.arrowHover {
+  cursor: default;
+}
+
+.padding16vertical {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.padding16horizontal {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+.padding16Right {
+  padding-right: var(--padding);
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.padding16Left {
+  padding-left: var(--padding);
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.padding16 {
+  padding: var(--padding);
+}
+
+.marginLeft {
+  margin-left: var(--padding);
+}
+
+.margin16 {
+  margin: var(--padding);
+}
+
+.maxWidth {
+  width: 100%;
+}
+
+.halfWidth {
+  min-width: 50vw;
+  max-width: 50vw;
+}
+
+.thirdWidth {
+  width: 33%;
+}
+
+.collapse {
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+}
+
+.alignTop {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.noBorder {
+  border: none;
+}
+
+.noOutline {
+  outline: none;
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ebc700,
+      0 0 40px #ebc700, 0 0 50px #ebc700, 0 0 60px #ebc700, 0 0 70px #ebc700;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff8000, 0 0 40px #ff8000,
+      0 0 50px #fff899, 0 0 60px #fff899, 0 0 70px #fff899, 0 0 80px #fff899;
+  }
+}
+
+#float-label {
+  display: flex;
+  flex-direction: column;
+}
+
+#float-label input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+
+#float-label label {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 23px;
+  color: var(--cards-blue);
+  pointer-events: none;
+}
+
+#float-label label {
+  position: absolute;
+  transform: translate(0, 14px) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+}
+
+#float-label:focus-within label {
+  transform: translate(0, 2px) scale(0.7);
+}
+
+#float-label .Active {
+  transform: translate(0, 2px) scale(0.7);
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+.spacer {
+  height: 16px;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --padding: 12px;
+  }
+
+  .font15 {
+    font-size: 12px;
+  }
+
+  .headerImage {
+    height: 0px;
+  }
+
+  #float-label label {
+    padding: 0 20px;
+  }
+
+  .main {
+    font-size: 12px;
+  }
+
+  .rowToColumnMobile {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputHeight {
+    height: 12px;
+  }
+
+  .spacer {
+    height: 8px;
+  }
+}
+
+.clickable {
+  transition: all 0.1s;
+}
+
+.clickable:hover {
+  filter: brightness(130%);
+  transition: all 0.1s;
+}
+
+.width100 {
+  width: 100px;
+}
+
+.inputHeight {
+  height: 20px;
+}
